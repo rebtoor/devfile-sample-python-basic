@@ -23,11 +23,11 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads-stage/ralfieri-tenant/devfile-sample-python-basic-c9e78:on-pr-{{revision}}
+    value: quay.io/ralfieri/ralfieri-tenant/devfile-sample-python-basic-c9e78:on-pr-{{revision}}
   - name: image-expires-after
     value: 5d
   - name: dockerfile
-    value: Dockerfile
+    value: docker/Dockerfile
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
