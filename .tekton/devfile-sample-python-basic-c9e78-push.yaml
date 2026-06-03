@@ -24,7 +24,7 @@ spec:
   - name: output-image
     value: quay.io/ralfieri/ralfieri-tenant/devfile-sample-python-basic-c9e78:{{revision}}
   - name: dockerfile
-    value: Dockerfile
+    value: docker/Dockerfile
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
